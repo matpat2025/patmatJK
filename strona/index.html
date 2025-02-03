@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sprzęt Komputerowy - Strona Główna</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Nagłówek -->
+	<header>
+		<div class="container header-content">
+			<h1>Sprzęt Komputerowy</h1>
+			<nav>
+				<ul class="menu">
+					<li><a href="#home" class="active">Strona Główna</a></li>
+					<li><a href="#about">O Sprzęcie</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Główna zawartość -->
+	<main class="container">
+		<!-- Sekcja: Strona Główna -->
+		<section id="home" class="hero">
+			<h2>Witaj na stronie o sprzęcie komputerowym</h2>
+			<p>Znajdziesz tutaj najnowsze informacje o kartach graficznych, procesorach oraz innych podzespołach komputerowych.</p>
+			<img src="https://gamer-zone.pl/wp-content/uploads/Modecom2345-500x500.png" alt="Sprzęt komputerowy">  
+		</section>
+
+		<!-- Sekcja: O Sprzęcie -->
+		<section id="about">
+			<article>
+				<h2>O sprzęcie komputerowym</h2>
+				<p>Na tej stronie prezentujemy najważniejsze informacje oraz aktualności dotyczące sprzętu komputerowego. Poznaj różnice między modelami, najnowsze trendy w technologii oraz recenzje produktów.</p>
+				<p>Dzięki naszej stronie łatwo znajdziesz porady dotyczące wyboru odpowiedniego sprzętu, porównania parametrów i najnowsze testy benchmarków.</p>
+				<img src="https://slc.com.pl/environment/cache/images/500_500_productGfx_1705191/MSI-Karta-graficzna-GeForce-RTX-4070-VENTUS-2X-E1-12G-OC-GDDR6-192bit-3DP.jpg" alt="Karta Graficzna" class="responsive-img">
+			</article>
+		</section>
+
+		<!-- Sekcja: Kontakt -->
+		<section id="contact">
+			<article class="contact-info">
+				<h2>Skontaktuj się z nami</h2>
+				<p>Masz pytania? Skorzystaj z formularza kontaktowego lub napisz do nas bezpośrednio na adres email: <a href="mailto:patmatj.strona@gmail.com">patmatj.strona@gmail.com</a>.</p>
+				<form action="#" method="post" class="contact-form">
+					<label for="name">Imię i nazwisko:</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="message">Wiadomość:</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+
+					<button type="submit">Wyślij</button>
+				</form>
+			</article>
+		</section>
+	</main>
+
+	<!-- Stopka -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 Sprzęt Komputerowy. Wszelkie prawa zastrzeżone.</p>
+		</div>
+	</footer>
+
+	<!-- Skrypt do płynnego przewijania -->
+	<script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+	</script>
+</body>
+</html>
